@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: {{ values.serviceName }}
-        image: gfleury/ssh-client
+        image: kroniak/ssh-client
         ports:
         - containerPort: {{ values.servicePort }}
         command: ["ssh"]
